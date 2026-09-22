@@ -1,0 +1,11 @@
+[Unit]
+Description=Daily Monitor Off
+
+[Service]
+Type=oneshot
+ExecStart=/path/to/monitor-off.sh
+StandardOutput=journal
+StnadardError=journal
+
+[Install]
+WantedBy=multi-user.target
